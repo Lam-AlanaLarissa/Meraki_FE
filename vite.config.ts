@@ -18,6 +18,8 @@ export default defineConfig({
         ]
       : []),
   ],
+  base: process.env.VITE_BASE_PATH || "/Meraki_FE",
+
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
